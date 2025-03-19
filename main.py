@@ -9,7 +9,7 @@ uart = UART(2, 9600,tx=17,rx=16)
 uart.init(9600, bits=8, parity=None, stop=1) 
 # initialize pin 2 as  an output
 led = Pin(2,Pin.OUT)
-
+s=''
 # run forever
 while True:
     # read one byte
