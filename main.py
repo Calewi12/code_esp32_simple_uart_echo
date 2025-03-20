@@ -20,7 +20,13 @@ while True:
         print(c)
         # toggle the onboard LED
         led.value(led.value()^1)
-	# sleep for a very small amount of time
+        t2 = c.decode("utf-8')
+	    s=s+t2
+	    if t2=='\n':|
+            print(s)
+            s=''
+            
+            
     else:
         # uart.write(b'test\n')
         a=input('type something and hit enter: ')
