@@ -9,7 +9,7 @@ uart = UART(2, 9600,tx=17,rx=16)
 uart.init(9600, bits=8, parity=None, stop=1) 
 # initialize pin 2 as  an output
 led = Pin(2,Pin.OUT)
-
+s=''
 # run forever
 while True:
     # read one byte
@@ -20,7 +20,13 @@ while True:
         print(c)
         # toggle the onboard LED
         led.value(led.value()^1)
-	# sleep for a very small amount of time
+        t2 = c.decode("utf-8')
+	    s=s+t2
+	    if t2=='\n':|
+            print(s)
+            s=''
+            
+            
     else:
         # uart.write(b'test\n')
         a=input('type something and hit enter: ')
