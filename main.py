@@ -13,7 +13,7 @@ s=''
 # run forever
 while True:
     # read one byte
-    c = uart.read(1)
+    c = uart.read(6)
     # if c is not empty:
     if c is not None:
         # write the byte back out to uart
