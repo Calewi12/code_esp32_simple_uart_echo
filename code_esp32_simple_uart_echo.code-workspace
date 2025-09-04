@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../code_esp32_simple_uart_echo"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
